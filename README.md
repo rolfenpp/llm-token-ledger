@@ -1,5 +1,7 @@
 # LLMTokenLedger
 
+![LLM spend analytics dashboard](docs/dashboard.png)
+
 Track LLM token spend from your backend. Wrap an LLM call, get tokens + cost logged automatically. View everything on a dashboard.
 
 ## Quick start
