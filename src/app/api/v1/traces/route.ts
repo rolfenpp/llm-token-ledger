@@ -7,7 +7,7 @@ export const runtime = "nodejs";
 
 export async function GET() {
   return NextResponse.json({
-    name: "Flight Recorder trace ingestion",
+    name: "LLMTokenLedger trace ingestion",
     accepts: "POST",
     schema: {
       organization: "{ slug, name? }",
