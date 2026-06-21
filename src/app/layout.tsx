@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Flight Recorder",
-  description: "Lightweight LLM cost tracing for production systems."
+  title: "LLMTokenLedger",
+  description: "Track LLM token spend from your backend."
 };
 
 export default function RootLayout({
