@@ -1,7 +1,8 @@
 {
-  "name": "flight-recorder",
+  "name": "llm-token-ledger",
   "version": "0.1.0",
   "private": true,
+  "description": "Track LLM token spend from your backend",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
