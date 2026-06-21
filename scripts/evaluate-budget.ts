@@ -321,7 +321,7 @@ async function main(): Promise<void> {
     throw new Error("DATABASE_URL is not set. Expected PostgreSQL on localhost:5433 from .env.");
   }
 
-  console.log("Flight Recorder budget gate starting...");
+  console.log("LLMTokenLedger budget gate starting...");
   console.log(`Target route: ${TARGET_ROUTE}`);
   console.log(`Target model: ${TARGET_MODEL}`);
 
