@@ -24,7 +24,7 @@ npm run db:seed
 
 ## Integrate into your backend
 
-Wrap any LLM call with the SDK. It counts tokens, calculates cost, and saves a trace — without slowing down your request.
+Wrap any LLM call with the SDK. It counts tokens, calculates cost, and saves a trace without slowing down your request.
 
 ```typescript
 import { FlightRecorder } from "@/lib/flight-recorder-sdk";
@@ -55,9 +55,11 @@ POST /api/v1/traces
 
 ## What you get
 
-- **Token + cost tracking** per request (input/output tokens, USD)
-- **Dashboard** — total spend, latency, recent traces
-- **Budget gate** — optional CI check to block expensive prompt changes
+**Token + cost tracking** per request (input/output tokens, USD)
+
+**Dashboard** for total spend, latency, and recent traces
+
+**Budget gate** as an optional CI check to block expensive prompt changes
 
 ```bash
 npm run budget:check
