@@ -535,7 +535,7 @@ export default async function Home() {
         </section>
 
         <footer className="mt-8 text-center font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-700">
-          Flight Recorder · Prisma 7 · PostgreSQL · Next.js App Router
+          LLMTokenLedger · PostgreSQL · Next.js
         </footer>
       </div>
     </main>
