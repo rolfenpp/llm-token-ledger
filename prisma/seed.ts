@@ -658,7 +658,7 @@ async function main(): Promise<void> {
     whaleOutputTokens: 0
   };
 
-  console.log("Flight Recorder seed starting...");
+  console.log("LLMTokenLedger seed starting...");
   console.log(`Target window: last ${DAYS} days (~${TARGET_TRACES} traces)`);
 
   await clearTelemetryTables();
