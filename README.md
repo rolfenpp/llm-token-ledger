@@ -58,7 +58,7 @@ POST /api/v1/traces
 - **Budget gate** — optional CI check to block expensive prompt changes
 
 ```bash
-npx tsx scripts/evaluate-budget.ts
+npm run budget:check
 ```
 
 ## Stack
