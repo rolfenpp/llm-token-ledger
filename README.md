@@ -2,10 +2,21 @@
 
 ![LLM spend analytics dashboard](docs/dashboard.png)
 
-Track LLM token spend from your backend. Wrap an LLM call, get tokens + cost logged automatically. View everything on a dashboard.
+A lightweight **tracking runtime** for LLM backends. Wrap your model calls once and every request automatically records input tokens, output tokens, cost, and latency.
+
+Think of it as a thin layer around your existing LLM code. Your app stays the same. LLMTokenLedger handles the accounting.
+
+## What it does
+
+**At runtime:** wraps LLM calls in your backend and logs token usage as they happen
+
+**In storage:** saves traces to PostgreSQL with sub penny cost precision
+
+**In the dashboard:** shows total spend, token volume, and per request history
+
+**In CI (optional):** fails the build if a prompt change pushes cost too high
 
 ## Quick start
-
 ```bash
 npm install
 cp .env.example .env
@@ -24,8 +35,7 @@ npm run db:seed
 
 ## Integrate into your backend
 
-Wrap any LLM call with the SDK. It counts tokens, calculates cost, and saves a trace without slowing down your request.
-
+Add the SDK wrapper around any LLM call. Token counting and cost calculation happen at runtime without blocking your response.
 ```typescript
 import { FlightRecorder } from "@/lib/flight-recorder-sdk";
 
